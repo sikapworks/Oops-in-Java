@@ -21,6 +21,18 @@ public class Student {
         this.rollNo = 0;
         this.age = 0;
     }
+    static void search(int rollNo) {
+
+    }
+    static void search(String name, String department) {
+
+    }
+    static void search(int rollNo, String name) {
+
+    }
+    static void search(String name, int rollNo) {
+
+    }
 
     public void studying(int no_of_hours) {
         System.out.println("The student " + name + " is studying for " + no_of_hours + ".");
@@ -55,5 +67,9 @@ public class Student {
         System.out.println("CollegeName is " + Student.CollegeName);
         Student.CollegeName = "IIT GZB";
         System.out.println("CollegeName after change: " + Student.CollegeName);
+
+        search(60);
+        search("Raya", 19);
+
     }
 }
