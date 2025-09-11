@@ -1,12 +1,13 @@
 package com.student;
 
 public class RegularStudent extends Student {
-    int attendance_per;
-    String class_room;
+    int attendancePer;
+    String classRoom;
 
     public RegularStudent(String Name, String Department, int rollNo, int Age, int attendance_per, String class_room) {
-        this.attendance_per = attendance_per;
-        this.class_room = class_room;
+        super(Name,Department,rollNo,Age );
+        this.attendancePer = attendance_per;
+        this.classRoom = class_room;
 
 
     }
@@ -17,7 +18,7 @@ public class RegularStudent extends Student {
     }
 
     public void payFee() {
-        System.out.println("the student " + name + " paid the tution fee+library fee+lab fee");
+        System.out.println("the student " + getName() + " paid the tution fee+library fee+lab fee");
 
     }
 

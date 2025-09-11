@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2aba24f-7fe6-4153-9bf1-986ad42573b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/student/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/student/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/student/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/HostelStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/HostelStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/RegularStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/RegularStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/student/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/student/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

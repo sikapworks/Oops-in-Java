@@ -1,16 +1,16 @@
 package com.student;
 
 public class Student {
-    public String name;
-    protected String department;
-    int rollNo;
-    public int age;
+    private String name;
+    private String department;
+    private int rollNo;
+    private int age;
 
-    static String CollegeName = "KIET";
+    private static String CollegeName = "KIET";
 
-    public Student(String name, String depart, int rollNo, int age) {
+    public Student(String name, String department, int rollNo, int age) {
         this.name = name;
-        this.department = depart;
+        this.department = department;
         this.rollNo = rollNo;
         this.age = age;
     }
@@ -21,55 +21,53 @@ public class Student {
         this.rollNo = 0;
         this.age = 0;
     }
-    static void search(int rollNo) {
 
-    }
-    static void search(String name, String department) {
-
-    }
-    static void search(int rollNo, String name) {
-
-    }
-    static void search(String name, int rollNo) {
-
-    }
-
-    public void studying(int no_of_hours) {
-        System.out.println("The student " + name + " is studying for " + no_of_hours + ".");
+    public void studying(int No_of_hours) {
+        System.out.println("The student" + getName() + "is studing for" + No_of_hours);
     }
 
     public void readAndWrite() {
-        System.out.println("The student can read and write.");
+        System.out.println("the student can read and write");
     }
 
     public void displayInfo() {
-        System.out.println("The student name is " + name + ", age is " + age + ", roll No is " + rollNo + " and department is " + department + ".");
+        System.out.println("Student name is" + name + ",Age is" + age + ",RollNo is" + rollNo + "and Department is" + department);
     }
 
     public void payFee() {
-        System.out.println("The studenet " + name + " paid the tution Fee");
+        System.out.println("The student" + name + "paid the tution fee");
     }
 
-    public static void main(String[] args) {
-        // Using parameterized constructor
-        Student student1 = new Student("Swayam_Srivastava", "CSE-AI", 258, 20);
-        student1.displayInfo();
-
-        // Using default constructor
-        Student student2 = new Student();
-        student2.name = "Nobita";
-        student2.age = 19;
-        student2.department = "CSE-AI";
-        student2.rollNo = 25;
-        student2.displayInfo();
-
-        // Static variable example
-        System.out.println("CollegeName is " + Student.CollegeName);
-        Student.CollegeName = "IIT GZB";
-        System.out.println("CollegeName after change: " + Student.CollegeName);
-
-        search(60);
-        search("Raya", 19);
-
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        department = department;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        age = age;
+    }
+
+    public static String getCollegeName() {
+        return CollegeName;
+    }
+
+    public static void setCollegeName(String collegeName) {
+        CollegeName = collegeName;
+    }
+
 }
