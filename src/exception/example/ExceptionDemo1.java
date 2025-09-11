@@ -10,7 +10,7 @@ public class ExceptionDemo1 {
     }
 
     public static void main(String[] args) {
-        EcxeptionDemo1 ed = new EcxeptionDemo1();
+        ExceptionDemo1 ed = new ExceptionDemo1();
         try {
             ed.divide();
         }catch (ArithmeticException e) {
